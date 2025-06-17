@@ -1,0 +1,11 @@
+.card {
+    button {
+        transform: translateY(100%);
+        transition: all 0.5s;
+    }
+&:hover{
+    button{
+        transform: translateY(0%);
+    }
+}
+}

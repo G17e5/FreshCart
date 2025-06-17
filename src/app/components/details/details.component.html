@@ -1,0 +1,37 @@
+<h1 class="text-green-600 text-3xl text-center mb-4">Product Details</h1>
+
+@if (detailsProduct) {
+
+    <section class="container">
+      <div class="row d-flex align-items-center justify-content-center">
+        <div class="col-md-3 d-flex justify-content-center">
+          <img [src]="detailsProduct.imageCover" class="img-fluid" [alt]="detailsProduct.title">
+        </div>
+        
+        <div class="col-md-9">
+          <div>
+            <h2 class="text-2xl">{{detailsProduct.title}}</h2>
+            <p class="text-muted">{{detailsProduct.description}}</p>
+    
+            <div class="card-body px-2 py-4">
+              <h4 class="text-green-500 text-xs">{{detailsProduct.category.name}}</h4>
+              <h3 class="font-medium">{{detailsProduct.title.split(" ",2).join(" ")}}</h3>
+    
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="text-xl">{{detailsProduct.price |currency : 'GBP' }}</span>
+                <div class="d-flex align-items-center">
+                  <i class="fas fa-star text-yellow-300"></i>
+                  <span class="text-gray-500 ms-1 text-xl">{{detailsProduct.ratingsAverage}}</span>
+                </div>
+              </div>
+            </div>
+    
+            <button class="bg-green-600 text-white py-2 px-10 border rounded w-75 mx-auto d-block mt-2">
+              +Add To Carts
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+}
