@@ -1,0 +1,1 @@
+import{Hb as s,Za as t,qb as o,rb as a}from"./chunk-2HQHBDWC.js";import"./chunk-4CLCTAJ7.js";var p=class n{static \u0275fac=function(e){return new(e||n)};static \u0275cmp=t({type:n,selectors:[["app-brands"]],decls:2,vars:0,template:function(e,i){e&1&&(o(0,"p"),s(1,"brands works!"),a())},encapsulation:2})};export{p as BrandsComponent};
